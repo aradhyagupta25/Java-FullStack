@@ -1,0 +1,6 @@
+# IntelliJ / build folders
+.idea/
+*.iml
+out/
+target/
+*.class
