@@ -13,5 +13,13 @@ public class Main {
         char ch = 'A';
         boolean b = true;
 
+        //literals: the values of a variable
+        int num1 = 0b1010;   //binary
+        int num2 = 0x7E;    //hexa
+        int num3 = 1_00_00_000;
+        float num4 = 56f;
+        double num5 = 12e10;
+        System.out.println(num1);
+
     }
 }
