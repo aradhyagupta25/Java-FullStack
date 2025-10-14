@@ -4,8 +4,10 @@ import java.lang.instrument.ClassDefinition;
 
 public class Student {
 
+    String name; // Instance Variable
+
     public int marks(int mark){
-        int grade = mark / 100;
+        int grade = mark / 100;     //local variable
         return grade ;
     }
     public float marks(float mark){
@@ -17,7 +19,7 @@ public class Student {
         Student s1 = new Student();
         // type(Student) ref_variable(s1) = memory_alloc(new) Constructor(Student()
 
-        int final_grade1 = s1.marks(837);
+        int final_grade1 = s1.marks(837);   // Local variable
         float final_grade2 = s1.marks(923.45f);
         System.out.println(final_grade1);
         System.out.println(final_grade2);
