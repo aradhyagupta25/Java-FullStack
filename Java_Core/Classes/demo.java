@@ -1,4 +1,4 @@
-package Java_Core;
+package Java_Core.Classes;
 
 public class demo {
     public static void main(String[] args) {

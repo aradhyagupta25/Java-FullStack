@@ -1,6 +1,4 @@
-package Java_Core;
-
-import java.lang.instrument.ClassDefinition;
+package Java_Core.Classes;
 
 public class Student {
 
@@ -27,7 +25,7 @@ public class Student {
 
         s1.name = "Gupta";
         System.out.println(s1.name);
-        System.out.println(s2.name);
+        System.out.println(s2.name);    //unchanged
 
     }
 }
