@@ -22,5 +22,17 @@ public class Jagged {
             }
             System.out.println("");
         }
+
+        int threeD[][][] = new int[3][3][3];
+        for(int i = 0; i < threeD.length; i++){
+            for(int j = 0; j < threeD[i].length; j++){
+                for(int k = 0; k < threeD[i].length; k++){
+                    threeD[i][j][k] = (int)(Math.random() * 10);
+                }
+            }
+        }
+
+        System.out.println(Arrays.deepToString(threeD));
+
     }
 }
