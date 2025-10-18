@@ -30,6 +30,6 @@ public class Objects {
         student[1] = s2;
         student[2] = s3;
 
-        System.out.println(Arrays.deepToString(student));
+        System.out.println(student[0].roll_no);
     }
 }
