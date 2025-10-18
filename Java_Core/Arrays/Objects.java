@@ -30,6 +30,6 @@ public class Objects {
         student[1] = s2;
         student[2] = s3;
 
-        System.out.println(student[0].roll_no);
+        System.out.println(student[0].name + " " + student[0].age);
     }
 }
