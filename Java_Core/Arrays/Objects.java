@@ -31,5 +31,10 @@ public class Objects {
         student[2] = s3;
 
         System.out.println(student[0].name + " " + student[0].age);
+
+        for( Student stud :  student){
+            System.out.println(stud.name + " " + stud.age); // /Emhanced FOr Loop
+        }
+
     }
 }
