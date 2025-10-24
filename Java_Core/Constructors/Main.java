@@ -24,4 +24,12 @@ public class Main {
         System.out.println(car.brand + " " +  car.model + " " + car.price);
 
     }
+    // camel casing
+    // class and interface: Calc, Runnable
+    // variable and methods: marks, show();
+    // constants: PIE, BRAND
+
+    // showMyMarks()
+    // MyData
+
 }
