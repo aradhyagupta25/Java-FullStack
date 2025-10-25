@@ -1,6 +1,6 @@
 package Java_Core.Inheritance;
 
-class A{
+class A{    // every class in Java extends the object class.
     A(){
         super();
         System.out.println("A");
@@ -13,6 +13,7 @@ class A{
 class B  extends A{
     B(){
         super();    // calls default constructor of super class by default
+        //super(7);   // calls parameterized constructor of A.
         System.out.println("B");
     }
     B(int b){
@@ -24,6 +25,6 @@ class B  extends A{
 
 public class Demo {
     public static void main(String[] args) {
-        B b1 = new B(5);
+        B b1 = new B();
     }
 }
