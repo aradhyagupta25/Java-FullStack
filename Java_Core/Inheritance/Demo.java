@@ -17,7 +17,9 @@ class B  extends A{
         System.out.println("B");
     }
     B(int b){
-        super(b);   // calls parameterized when called with arguments
+        //super(b);   // calls parameterized when called with arguments
+
+        this(); // calls constructor of the same class.     B(int b) -> this() -> B() -> super()
         System.out.println("B int");
     }
 }
@@ -25,6 +27,6 @@ class B  extends A{
 
 public class Demo {
     public static void main(String[] args) {
-        B b1 = new B();
+        B b1 = new B(5);
     }
 }
