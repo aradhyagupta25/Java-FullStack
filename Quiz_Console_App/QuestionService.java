@@ -8,11 +8,11 @@ public class QuestionService {
     String selection[] = new String[5];
 
     public QuestionService(){
-        questions[0] = new Questions(1, "Which lang", "java", "c++", "javascript", "python", "java");
-        questions[1] = new Questions(2, "Which car", "java", "c++", "javascript", "python", "java");
-        questions[2] = new Questions(3, "Which city", "java", "c++", "javascript", "python", "java");
-        questions[3] = new Questions(4, "Which ", "java", "c++", "javascript", "python", "java");
-        questions[4] = new Questions(5, "What", "java", "c++", "javascript", "python", "java");
+        questions[0] = new Questions(1, "Which Lang", "JAVA", "C++", "JS", "PYTHON", "JAVA");
+        questions[1] = new Questions(2, "Which Car", "BMW", "AUDI", "FERRARI", "PORSCHE", "PORSCHE");
+        questions[2] = new Questions(3, "Which City", "SF", "MOUNTAIN VIEW", "LA", "SAN JOSE", "SF");
+        //questions[3] = new Questions(4, "Which ", "java", "c++", "javascript", "python", "java");
+        //questions[4] = new Questions(5, "What", "java", "c++", "javascript", "python", "java");
     }
 
     public void playQuiz() {
