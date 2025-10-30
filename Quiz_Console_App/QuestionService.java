@@ -11,8 +11,11 @@ public class QuestionService {
         questions[4] = new Questions(5, "What", "java", "c++", "javascript", "python", "java");
     }
 
-    public void displayQuestions() {
+    public void playQuiz() {
         System.out.println("In Display Questions");
+        for(Questions q :  questions ){
+            System.out.println(q);
+        }
 
     }
 }
