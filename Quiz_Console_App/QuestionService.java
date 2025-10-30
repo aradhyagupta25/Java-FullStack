@@ -1,7 +1,11 @@
 package Quiz_Console_App;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class QuestionService {
     Questions[] questions = new Questions[5];
+    String selection[] = new String[5];
 
     public QuestionService(){
         questions[0] = new Questions(1, "Which lang", "java", "c++", "javascript", "python", "java");
@@ -12,10 +16,18 @@ public class QuestionService {
     }
 
     public void playQuiz() {
-        System.out.println("In Display Questions");
+        int i = 0;
         for(Questions q :  questions ){
-            System.out.println(q);
+            System.out.println("question no. : " + q.getId());
+            System.out.println(q.getQuestion());
+            System.out.println(q.getOpt1());
+            System.out.println(q.getOpt2());
+            System.out.println(q.getOpt3());
+            System.out.println(q.getOpt4());
+            Scanner scanner = new Scanner(System.in);
+            selection[i] = scanner.nextLine();
+            i++;
         }
-
+        System.out.println(Arrays.toString(selection));
     }
 }
