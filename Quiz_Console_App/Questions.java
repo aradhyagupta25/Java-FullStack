@@ -1,6 +1,6 @@
 package Quiz_Console_App;
 
-public class Questions {
+public class Questions {    // Structure to store Data of the Questions , Options and Answers
     private int id;
     private String question;
     private String opt1;

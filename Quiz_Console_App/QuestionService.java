@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class QuestionService {
-    Questions[] questions = new Questions[5];
-    String selection[] = new String[5];
+    Questions[] questions = new Questions[5];       // Each Index points to whole Questions-Answer info.
+    String selection[] = new String[5];     // each index will store the user answer.
 
     public QuestionService(){
         questions[0] = new Questions(1, "Which Lang", "JAVA", "C++", "JS", "PYTHON", "JAVA");
@@ -28,7 +28,7 @@ public class QuestionService {
             selection[i] = scanner.nextLine();
             i++;
         }
-        //System.out.println(Arrays.toString(selection));
+        System.out.println(Arrays.toString(selection));
     }
 
     public void printScore(){
