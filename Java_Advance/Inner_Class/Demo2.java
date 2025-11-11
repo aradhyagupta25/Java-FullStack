@@ -28,11 +28,18 @@ public class Demo2 {
             public void Name() {
                 System.out.println("Lion");
             }
+            @Override
+            public void Family(){
+                System.out.println("Family: Cat ");
+            }
         };      // here we are not making object of abstract class "Mammal", but we are creating object of an Anonymous class which is overriding the abstract method.
+        lion.Name();
+        lion.Family();
 
     }
 }
 
 abstract class Mammal{
     public abstract void Name();
+    public abstract void Family();
 }
