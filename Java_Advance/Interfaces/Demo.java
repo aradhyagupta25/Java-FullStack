@@ -1,5 +1,9 @@
 package Java_Advance.Interfaces;
 
+// class - class -> extends.
+// class - interface -> implement.
+// interface - interface -> extends.
+
 interface A{ // interface is not a clas like abstract class. and by default every method of interface is "public abstract".
 
     int year = 2027;    // interface variables are by default final and static.
