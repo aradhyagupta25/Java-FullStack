@@ -5,6 +5,7 @@ package Java_Advance.Enums;
 enum status{    // status is a class here.
     running , failed, pending, success; // "NAMED CONSTANTS".  these are objects of the class status.
 }
+// by default, enum extends enum class.
 
 public class Demo {
     public static void main(String[] args) {
