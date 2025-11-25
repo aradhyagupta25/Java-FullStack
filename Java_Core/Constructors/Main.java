@@ -20,7 +20,7 @@ public class Main {
         System.out.println(car.brand + " " +  car.model + " " + car.price);
         car.brand = "BMW";
         car.model = "3 Series";
-        car.price = 50_000;
+        car.price = 50_00_000;
         System.out.println(car.brand + " " +  car.model + " " + car.price);
 
     }

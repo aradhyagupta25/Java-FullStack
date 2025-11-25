@@ -10,7 +10,7 @@ class Student {
     public void setName(String name) {
         this.name = name;
     }
-        // "This" keyword represents the current object. it is used to point to the instance variable, differenciate b/w local and instance variable.
+        // "This" keyword represents the current object. it is used to point to the instance variable, differenctiate b/w local and instance variable.
     public int getAge() {   // Age
         return age;
     }
