@@ -11,14 +11,14 @@ interface A{
     void show();    //only one method for functional Interface.
 }
 
-class B implements A{
+class B implements A{       // one way of overriding method of interface.
     public void show(){
         System.out.println("Inside Show");
     }
 }
 public class Demo1{
     public static void main(String[] args) {
-        A obj =new A() {
+        A obj =new A() {        // incase of functional interface we can directly define the abstract method of the interface here.
             @Override
             public void show() {
                 System.out.println("Inside show FI");
