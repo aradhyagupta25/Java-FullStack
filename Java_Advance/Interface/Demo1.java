@@ -4,6 +4,6 @@ package Java_Advance.Interface;
 
 // Serialization: saving data of any object in hard drive. this can be done using marker interface.
 
-//
+//A functional interface in Java is any interface that contains exactly one abstract method.
 public class Demo1 {
 }
