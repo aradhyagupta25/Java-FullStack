@@ -9,6 +9,7 @@ interface C{
     int add(int a, int b);
 }
 
+//now using lambda expression. "->" is called the lambda. code inside {} is called an expression.
 public class Demo {
     public static void main(String[] args) {
 
