@@ -24,7 +24,7 @@ public class demo {
         }       // in case of an error, java will throw an exception, and we need to "catch" it.
         // java will throw an exception as on "Object" and we have to accept it as an "Object".
         catch(Exception e){ //only executed in case of an exception otherwise ignored.
-            System.out.println("Something went wrong");
+            System.out.println("Something went wrong " + e);
         }
 
         System.out.println(j);
