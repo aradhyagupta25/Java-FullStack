@@ -29,3 +29,17 @@ public class demo2 {
         System.out.println("got so far");
     }
 }
+
+// Exception Hierarchy
+
+// Object class -> Throwable class    // many words which ends with "-able" are interfaces but here "Throwable is a class".
+
+// Throwable class -> Error( which we can't handle ) and Exception( which we can handle ).
+
+// Error -> Thread Death, IO Error, Virtual Machine Error, Out of memory.
+
+// Exception -> RuntimeException, SQL Exception, IO Exception.
+
+// RuntimeException -> Arithmetic, ArrayIndex..., Null Pointer.         // also called "Unchecked" exceptions because we may or may not handle these exceptions ( up to us ).
+
+// SQL and IO are "Checked" exceptions since it must be handled in case of an exception.
