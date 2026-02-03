@@ -1,5 +1,6 @@
 package Java_Advance.ExceptionHandling;
 
+// Custom Exception
 class guptaException extends Exception {    // always extend Exception or Runtime Exception class for custom exception handling.
     public guptaException(String msg) {
         super(msg);     // if accepting a text in a "throw" then use the Exception() or RuntimeException() constructor to pass the message.
