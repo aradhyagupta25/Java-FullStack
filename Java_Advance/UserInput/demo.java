@@ -14,7 +14,7 @@ public class demo {
         // BufferReader
         System.out.println("Enter using bf: ");
         InputStreamReader in = new InputStreamReader(System.in);
-        BufferedReader bf = new BufferedReader(in);     // BufferReader can take input from any source. ex- files etc.
+        BufferedReader bf = new BufferedReader(in);     // BufferReader can take input from any source. ex- files, DB connections etc.
 
        int num = Integer.parseInt(bf.readLine());       // readline() reads strings. we will parse the string into an Integer.
         System.out.println(num);
