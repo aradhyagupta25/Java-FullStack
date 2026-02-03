@@ -8,7 +8,7 @@ public class demo3 {
 
         try{
             j = 18/i;
-            if( i == 0)
+            if( j == 0)
                     throw new ArithmeticException("don divide by zero");    // "throw" keyword is used to throw the exception and "catch" keyword will catch it. it will require to create a new Exception object.
                     // In ArithmeticException() constructor, we can pass a message to be passed with the catch block.
         }
