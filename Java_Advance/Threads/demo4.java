@@ -21,7 +21,7 @@ public class demo4 {
         Thread t1 = new Thread(obj1);
         Thread t2 = new Thread(obj2);
 
-        t1.run();
-        t2.run();
+        t1.start();
+        t2.start();
     }
 }
