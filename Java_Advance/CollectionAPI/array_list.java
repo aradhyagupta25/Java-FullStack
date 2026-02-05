@@ -26,11 +26,16 @@ public class array_list {
         }
         System.out.println(nums);
 
+        // lists supports duplicate elements.
         nos.add(7);
-        nos.add(8);
-        nos.set(2, 9);
-        nos.set(5, 10);
+        nos.add(18);
+        nos.add(9);
+        nos.add(10);
         System.out.println(nos.get(0)); //accessing elements using index values.
+
+        for(Integer i : nos){
+            System.out.println(i);
+        }
 
     }
 }
