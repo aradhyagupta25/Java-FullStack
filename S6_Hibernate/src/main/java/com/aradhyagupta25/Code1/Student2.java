@@ -1,4 +1,4 @@
-package com.aradhyagupta25;
+package com.aradhyagupta25.Code1;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

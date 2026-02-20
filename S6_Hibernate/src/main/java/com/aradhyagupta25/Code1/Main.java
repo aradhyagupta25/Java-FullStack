@@ -1,4 +1,4 @@
-package com.aradhyagupta25;
+package com.aradhyagupta25.Code1;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

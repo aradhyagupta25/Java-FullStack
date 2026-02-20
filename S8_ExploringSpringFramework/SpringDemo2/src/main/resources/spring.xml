@@ -1,0 +1,44 @@
+<!--beans are the objects managed by the spring framework.-->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="alien1" class="com.aradhyagupta25.Alien" scope="singleton" autowire="byType">
+<!--        <property name="age" value="23"/>-->
+        <!--        this is called SETTER INJECTION.-->
+
+<!--        <property name="laptop" ref="lap"/>-->
+        <!--        INJECTING a value/reference with the "ref" attribute.-->
+
+<!--        <constructor-arg type="com.aradhyagupta25.Laptop" ref="lap"/>-->
+<!--        <constructor-arg type="int" value="24"/>-->
+<!--        if we don't mention the type then sequence will matter.only works with 2 different data types.-->
+
+<!--        <constructor-arg index="1" ref="lap"/>-->
+<!--        <constructor-arg index="0" value="24"/>-->
+
+        <property name="age" value="25"/>
+<!--        <property name="computer" ref="computer1"/>-->
+
+    </bean>
+<!--    there are 2 scopes here: singleton (by default, object created when the container is loaded.) and prototype (create object every time getBean is called). -->
+
+<!--    <bean id="alien2" class="com.aradhyagupta25.Alien"> </bean>-->
+<!--    <bean id="laptop" class="com.aradhyagupta25.Laptop"> </bean>-->
+    <bean id="computer" class="com.aradhyagupta25.Laptop" primary="true"></bean>
+    <bean id="computer1" class="com.aradhyagupta25.Dekstop" lazy-init="true"></bean>
+
+</beans>
+
+<!-- 1. we can create multiple object of the same class with different IDs.-->
+<!-- 2. we can create a bean without the IDs but, it's required to uniquely identify the object.-->
+<!-- 3. we can create only one object with the same ID.-->
+<!-- 4. singleton: allows only one object for each ID. creates at the time of loading the container.-->
+<!-- 5. prototype: creates objects whenever encounter a bean.-->
+<!-- 6. "autowire" works when the property is not mentioned in side bean, and we want spring to connect the dependency for us.-->
+<!-- 7. if we autowire using "byName" we must have a property with that name.-->
+<!-- 8. if we autowire using "byType" we can use class in the property. -->
+<!-- 9. if we mention "primary="true"" in the bean, autowiring will prioritize that bean in case of 2 beans of same type(Computer) . but if we mention a property for a specific, autowiring will use that.-->
+<!-- 10. if we want to crate an object of class Dekstop only when required or called in the property, we will use "lazy-init" = true. -->

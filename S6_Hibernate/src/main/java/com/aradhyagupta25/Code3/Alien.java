@@ -1,18 +1,20 @@
-package com.aradhyagupta25;
+package com.aradhyagupta25.Code3;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+
+import java.util.List;
 
 @Entity
-//@Table(name = "Alien_Table")
 public class Alien {
-
     @Id
     private int aid;
-    //@Column(name = "Alien_Name")
     private String aname;
-    //@Transient  // doesn't include the column
     private String tech;
-    private Laptop laptop;
+    @OneToMany (fetch =  FetchType.EAGER)      // mentioning this will fetch laptop details also.
+    private List<Laptop> laptop;
 
     public int getAid() {
         return aid;
@@ -38,11 +40,11 @@ public class Alien {
         this.tech = tech;
     }
 
-    public Laptop getLaptop() {
+    public List<Laptop> getLaptop() {
         return laptop;
     }
 
-    public void setLaptop(Laptop laptop) {
+    public void setLaptop(List<Laptop> laptop) {
         this.laptop = laptop;
     }
 
@@ -56,5 +58,3 @@ public class Alien {
                 '}';
     }
 }
-
-

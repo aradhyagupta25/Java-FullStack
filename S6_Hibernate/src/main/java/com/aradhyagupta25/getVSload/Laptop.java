@@ -1,13 +1,23 @@
-package com.aradhyagupta25;
+package com.aradhyagupta25.getVSload;
 
-import jakarta.persistence.Embeddable;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
-@Embeddable     // it helps in merging or embedding complex data type ( object of a class ) with the entity.
+@Entity
 public class Laptop {
-
+    @Id
+    private String lid;
     private String brand;
     private String model;
     private int ram;
+
+    public String getLid() {
+        return lid;
+    }
+
+    public void setLid(String lid) {
+        this.lid = lid;
+    }
 
     public String getBrand() {
         return brand;
@@ -36,7 +46,8 @@ public class Laptop {
     @Override
     public String toString() {
         return "Laptop{" +
-                "brand='" + brand + '\'' +
+                "lid='" + lid + '\'' +
+                ", brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 ", ram=" + ram +
                 '}';
