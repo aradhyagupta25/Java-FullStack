@@ -3,19 +3,19 @@ package com.aradhyagupta25.SpringJDBCEx.model;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component
-@Scope("prototype")
+@Component  // will allow spring to create a bean of this class.
+@Scope("prototype") //to work with multiple objects of the Student class.
 public class Student {
-    private int rollNo;
+    private int rollno;
     private String name;
-    private int marks;
+    private int age;
 
-    public int getRollNo() {
-        return rollNo;
+    public int getRollno() {
+        return rollno;
     }
 
-    public void setRollNo(int rollNo) {
-        this.rollNo = rollNo;
+    public void setRollno(int rollno) {
+        this.rollno = rollno;
     }
 
     public String getName() {
@@ -26,20 +26,20 @@ public class Student {
         this.name = name;
     }
 
-    public int getMarks() {
-        return marks;
+    public int getAge() {
+        return age;
     }
 
-    public void setMarks(int marks) {
-        this.marks = marks;
+    public void setAge(int age) {
+        this.age = age;
     }
 
     @Override
     public String toString() {
         return "Student{" +
-                "rollNo=" + rollNo +
+                "rollno=" + rollno +
                 ", name='" + name + '\'' +
-                ", marks=" + marks +
+                ", age=" + age +
                 '}';
     }
 }
